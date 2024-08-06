@@ -27,9 +27,9 @@ public class UserController {
     @GetMapping("/list")
     public String list(ModelMap model){
     List<User> users = Arrays.asList(
-    new User("Carlos", "Perez"),
-    new User("Martha","Sanchez"),
-    new User("Vicente","Camargo")
+    new User("Carlos", "Perez","carlos@gmail.com"),
+    new User("Martha","Sanchez","martha@gmail"),
+    new User("Vicente","Camargo","vicene@gamil.com")
     );
     model.addAttribute("title", "Listado de Usuarios");
     model.addAttribute("users", users);
